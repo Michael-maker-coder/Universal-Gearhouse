@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg" class="logo"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <title>Universal Gearhouse | Film & Media Equipment</title>
+
+  <!-- Montserrat font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styling.css" />
+</head>
+<body>
+  <!-- HEADER TOP - split background with logo center, left social icons, right booklet link -->
+  <header class="header-top">
+    <div class="header-top-left">
+      <div class="logo-wrap">
+        <img src="images/logo.jpeg" alt="Universal Gearhouse Logo" class="logo-img" id="zoom-logo"/>
+      </div>
+    </div>
+
+    <div class="header-top-right">
+      <div class="header-socials">
+  <a href="mailto:info@universalgearhouse.com" class="tooltip" aria-label="Email">
+    <i class="fas fa-envelope"></i>
+    <span class="tooltip-text">Email</span>
+  </a>
+
+  <a href="tel:+27123456789" class="tooltip" aria-label="Phone">
+    <i class="fas fa-phone"></i>
+    <span class="tooltip-text">Phone</span>
+  </a>
+
+  <a href="https://wa.me/27123456789" class="tooltip" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="tooltip-text">WhatsApp</span>
+  </a>
+
+  <a href="https://facebook.com/universalgearhouse" class="tooltip" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+    <span class="tooltip-text">Facebook</span>
+  </a>
+
+  <a href="https://instagram.com/universalgearhouse" class="tooltip" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+    <span class="tooltip-text">Instagram</span>
+  </a>
+</div>
+
+    </div>
+  </header>
+
+  <!-- HEADER BOTTOM - white background with search panel left and navigation right (nav bar below center-right) -->
+  <section class="header-bottom">
+    <div class="search-panel">
+      <div class="categories-dropdown">
+        <button id="catBtn" class="cat-btn">All categories <span class="triangle">▼</span></button>
+        <div id="catList" class="cat-list">
+          <!-- Many categories with scrollable box -->
+          <ul>
+           <a href="catalogue.html"><li>All Categories</li></a>
+            <a href="cameras.html"><li>Cameras</li></a>
+            <a href="cameras.html"><li>DSLR Cameras</li></a>
+            <a href="cameras.html"><li>Remote Cameras</li></a>
+            <a href="cameras.html"><li>Lenses</li></a>
+            <a href="cameras.html"><li>Zoom Lenses</li></a>
+            <a href="cameras.html"><li>Prime Lenses</li></a>
+            <a href="gear-grips.html"><li>Grips Gear</li></a>
+            <a href="gear-grips.html"><li>Accessories</li></a>
+            <a href="gear-grips.html"><li>Streaming Units</li></a>
+            <a href="gear-grips.html"><li>Gear Stands</li></a>
+            <a href="gear-grips.html"><li>Sound Mixers</li></a>
+            <a href="lighting.html"><li>Gear Lighting</li></a>
+            <a href="lighting.html"><li>Power Distribution Packages</li></a>
+            <a href="lighting.html"><li>Generators</li></a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="search-input">
+       <input type="text" placeholder="What are you looking for?" aria-label="Search" />
+       <i class="fas fa-search search-icon"></i>
+      </div>
+
+
+    </div>
+
+    <nav>
+  <ul class="nav-menu">
+    <li><a href="index.html" class="active">Home</a></li>
+
+    <li class="dropdown">
+      <a href="cameras.html">Cameras</a>
+      <ul class="dropdown-menu">
+        <li><a href="cameras.html">Digital Cameras</a></li>
+        <li><a href="cameras.html">Lenses</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="lighting.html">Lighting</a>
+      <ul class="dropdown-menu">
+        <li><a href="lighting.html">Gear Lighting</a></li>
+        <li><a href="lighting.html">Generators</a></li>
+        <li><a href="lighting.html">Power Distribution Packages</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="gear-grips.html">Grips</a>
+      <ul class="dropdown-menu">
+        <li><a href="gear-grips.html">Gear Grips</a></li>
+        <li><a href="gear-grips.html">Gear Stands</a></li>
+        <li><a href="gear-grips.html">Accessories</a></li>
+        <li><a href="gear-grips.html">Streaming Units</a></li>
+        <li><a href="gear-grips.html">Sound Mixers</a></li>
+      </ul>
+    </li>
+
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  </section>
+
+  <!-- HERO SECTION (black background) with 3 dark images (carousel) -->
+  <section class="hero-section">
+    <div class="hero-carousel" id="heroCarousel">
+      <div class="hero-slide active" style="background-image:url('images/hero-pic1.jpg')">
+        <div class="hero-content">
+          <h1>Rent Pro Film Gear — Fast & Reliable</h1>
+          <p>Top-tier cameras, lenses, and lighting for every production — available daily.</p>
+          <div class="hero-cta">
+            <a href="catalogue.html" class="cta-btn">Browse Gear</a>
+            <a href="contact.html" class="cta-btn outline">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-slide" style="background-image:url('images/hero-pic2.jpg')">
+        <div class="hero-content">
+          <h1>Trusted by South African Productions</h1>
+          <p>Flexible rental packages and on-set support from experienced technicians.</p>
+          <div class="hero-cta">
+            <a href="catalogue.html" class="cta-btn">View Catalogue</a>
+            <a href="contact.html" class="cta-btn outline">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-slide" style="background-image:url('images/hero-pic4.webp')">
+        <div class="hero-content">
+          <h1>Packages for Every Budget</h1>
+          <p>From boutique shoots to commercial productions — we’ve got you covered.</p>
+          <div class="hero-cta">
+            <a href="catalogue.html" class="cta-btn">See Packages</a>
+            <a href="contact.html" class="cta-btn outline">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- left / right nav buttons -->
+      <button class="hero-nav left" id="heroPrev" aria-label="Previous slide">‹</button>
+      <button class="hero-nav right" id="heroNext" aria-label="Next slide">›</button>
+    </div>
+  </section>
+
+  <!-- PROCESS / HOW IT WORKS -->
+  <section class="process-section">
+    <div class="process-grid">
+      <div class="proc-card">
+        <i class="fas fa-truck offer-icon"></i>
+        <h3>Collection & Delivery</h3>
+        <p>Flexible pickup and delivery options to suit your schedule and location.</p>
+      </div>
+
+      <div class="proc-card">
+        <i class="fas fa-map-location-dot offer-icon"></i>
+        <h3>Gear Check Area</h3>
+        <p>Inspect and test equipment in our dedicated gear-check stations before take-off.</p>
+      </div>
+
+      <div class="proc-card">
+        <i class="fas fa-tools offer-icon"></i>
+        <h3>Engineer Support</h3>
+        <p>On-call technicians and pre-booked support for on-set troubleshooting and setup.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US -->
+<section class="about-us">
+  <div class="about-image">
+    <img src="images/uvg.jpg" alt="About Universal Gearhouse"/>
+    <div class="about-overlay"></div>
+
+    <div class="about-text">
+      <h2>About Universal Gearhouse</h2>
+      <p>
+        Universal Gearhouse (UGH) is your trusted partner for professional film, 
+        lighting, and audio rental gear. We supply filmmakers, studios, and 
+        independent creatives with high-end equipment that meets global 
+        production standards. Our passion for technology and storytelling drives 
+        everything we do — ensuring that your production has the tools it needs 
+        to shine.
+      </p>
+      <a href="catalogue.html" class="about-btn">Explore Catalogue</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- CATEGORIES carousel (image backgrounds with label overlays) -->
+  <section class="categories-section">
+    <h2>Categories</h2>
+    <div class="cat-carousel" id="catCarousel">
+      <a href="cameras.html"><div class="cat-item" style="background-image:url('images/new5.jpg')">
+        <div class="cat-label">Cameras <span class="arrow">→</span></div>
+      </div></a>
+      <a href="cameras.html"><div class="cat-item" style="background-image:url('images/29.webp')">
+        <div class="cat-label">Lenses <span class="arrow">→</span></div>
+      </div></a>
+      <a href="lighting.html"><div class="cat-item" style="background-image:url('images/astera1.webp')">
+        <div class="cat-label">Lighting <span class="arrow">→</span></div>
+      </div></a>
+      <a href="gear-grips.html"><div class="cat-item" style="background-image:url('images/6.jpg')">
+        <div class="cat-label">Grips <span class="arrow">→</span></div>
+      </div></a>
+      <a href="catalogue.html"><div class="cat-item view-all" style="background-image:url('images/7.jpg')">
+        <div class="cat-label">View All <span class="arrow">→</span></div>
+      </div></a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <h2>Testimonials</h2>
+    <div class="testimonials-grid">
+      <blockquote class="testimonial">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+       </div>
+        <p>"Fantastic service and top-quality kit — we shot a commercial with the Alexa Mini and the results were superb."</p>
+        <cite>— Thabo M., Johannesburg</cite>
+      </blockquote>
+
+      <blockquote class="testimonial">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>"Reliable delivery and excellent support. The lighting package made our set look cinematic."</p>
+        <cite>— Lebo S., Sandton</cite>
+      </blockquote>
+
+      <blockquote class="testimonial">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>"Quick turnaround on last-minute bookings and competitive pricing. Highly recommend UGH."</p>
+        <cite>— Sipho K., Pretoria</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- GOOGLE REVIEW CTA -->
+  <section class="google-cta">
+    <div class="google-left">
+      <h3>Leave Us A Review</h3>
+      <p>Your feedback helps us improve and helps others find reliable gear rentals.</p>
+      <br>
+      <a href="#" class="review-btn" target="_blank" rel="noopener">Leave A Review</a>
+    </div>
+
+    <div class="google-right">
+      <!-- placeholder for google image on RHS -->
+      <div class="img-placeholder"><img src="images/google.webp" class="google-pic"/></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Follow us</h4>
+        <div class="social-icons">
+          <!-- icons -->
+          <div class="footer-socials">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fab fa-whatsapp"></i></a>
+           <a href="#"><i class="fas fa-envelope"></i></a>
+         </div>
+
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="catalogue.html">Cameras</a></li>
+          <li><a href="catalogue.html#lenses">Lenses</a></li>
+          <li><a href="catalogue.html#lighting">Lighting</a></li>
+          <li><a href="catalogue.html#grips">Grips</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal Stuff</h4>
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Sign up</h4>
+        <p>Receive promos & deals</p>
+        <form id="subscribeForm">
+          <input type="email" placeholder="Your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <small>© 2025 Universal Gearhouse</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

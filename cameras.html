@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cameras | Universal Gearhouse</title>
+  <link rel="stylesheet" href="styling.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- HEADER TOP - split background with logo center, left social icons, right booklet link -->
+  <header class="header-top">
+    <div class="header-top-left">
+      <div class="logo-wrap">
+        <img src="images/logo.jpeg" alt="Universal Gearhouse Logo" class="logo-img" id="zoom-logo"/>
+      </div>
+    </div>
+
+    <div class="header-top-right">
+      <div class="header-socials">
+  <a href="mailto:info@universalgearhouse.com" class="tooltip" aria-label="Email">
+    <i class="fas fa-envelope"></i>
+    <span class="tooltip-text">Email</span>
+  </a>
+
+  <a href="tel:+27123456789" class="tooltip" aria-label="Phone">
+    <i class="fas fa-phone"></i>
+    <span class="tooltip-text">Phone</span>
+  </a>
+
+  <a href="https://wa.me/27123456789" class="tooltip" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="tooltip-text">WhatsApp</span>
+  </a>
+
+  <a href="https://facebook.com/universalgearhouse" class="tooltip" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+    <span class="tooltip-text">Facebook</span>
+  </a>
+
+  <a href="https://instagram.com/universalgearhouse" class="tooltip" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+    <span class="tooltip-text">Instagram</span>
+  </a>
+</div>
+
+    </div>
+  </header>
+
+  <!-- HEADER BOTTOM - white background with search panel left and navigation right (nav bar below center-right) -->
+  <section class="header-bottom">
+    <div class="search-panel">
+      <div class="categories-dropdown">
+        <button id="catBtn" class="cat-btn">All categories<span class="triangle">▼</span></button>
+        <div id="catList" class="cat-list">
+          <!-- Many categories with scrollable box -->
+          <ul>
+            <a href="catalogue.html"><li>All Categories</li></a>
+            <a href="cameras.html"><li>Cameras</li></a>
+            <a href="cameras.html"><li>DSLR Cameras</li></a>
+            <a href="cameras.html"><li>Remote Cameras</li></a>
+            <a href="cameras.html"><li>Lenses</li></a>
+            <a href="cameras.html"><li>Zoom Lenses</li></a>
+            <a href="cameras.html"><li>Prime Lenses</li></a>
+            <a href="gear-grips.html"><li>Grips Gear</li></a>
+            <a href="gear-grips.html"><li>Accessories</li></a>
+            <a href="gear-grips.html"><li>Streaming Units</li></a>
+            <a href="gear-grips.html"><li>Gear Stands</li></a>
+            <a href="gear-grips.html"><li>Sound Mixers</li></a>
+            <a href="lighting.html"><li>Gear Lighting</li></a>
+            <a href="lighting.html"><li>Power Distribution Packages</li></a>
+            <a href="lighting.html"><li>Generators</li></a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="search-input">
+       <input type="text" placeholder="What are you looking for?" aria-label="Search" />
+       <i class="fas fa-search search-icon"></i>
+      </div>
+
+
+    </div>
+
+    <nav>
+  <ul class="nav-menu">
+    <li><a href="index.html">Home</a></li>
+
+    <li class="dropdown">
+      <a href="cameras.html" class="active">Cameras</a>
+      <ul class="dropdown-menu">
+        <li><a href="cameras.html">Digital Cameras</a></li>
+        <li><a href="cameras.html">Lenses</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="lighting.html">Lighting</a>
+      <ul class="dropdown-menu">
+        <li><a href="lighting.html">Gear Lighting</a></li>
+        <li><a href="lighting.html">Generators</a></li>
+        <li><a href="lighting.html">Power Distribution Packages</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="gear-grips.html">Grips</a>
+      <ul class="dropdown-menu">
+        <li><a href="gear-grips.html">Gear Grips</a></li>
+        <li><a href="gear-grips.html">Gear Stands</a></li>
+        <li><a href="gear-grips.html">Accessories</a></li>
+        <li><a href="gear-grips.html">Streaming Units</a></li>
+        <li><a href="gear-grips.html">Sound Mixers</a></li>
+      </ul>
+    </li>
+
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  </section>
+
+  <!-- MAIN BODY -->
+  <main class="catalogue-container">
+
+    <!-- FILTER PANEL -->
+    <aside class="filter-panel">
+      <h2>Filter By</h2>
+
+      <div class="filter-section">
+        <h3>Type</h3>
+        <label><input type="checkbox" /> Cameras (13)</label>
+        <label><input type="checkbox" /> DSLR Cameras (4)</label>
+        <label><input type="checkbox" /> Remote Cameras (2)</label>
+        <label><input type="checkbox" /> Lenses (10)</label>
+        <label><input type="checkbox" /> Zoom Lenses (6)</label>
+        <label><input type="checkbox" /> Prime Lenses (12)</label>
+      </div>
+
+      <div class="filter-section">
+        <h3>Brand</h3>
+        <label><input type="checkbox" /> Sony</label>
+        <label><input type="checkbox" /> Canon</label>
+        <label><input type="checkbox" /> Arri</label>
+        <label><input type="checkbox" /> Sigma</label>
+        <label><input type="checkbox" /> Zeiss</label>
+        <label><input type="checkbox" /> DZO</label>
+        <label><input type="checkbox" /> LAOWA</label>
+        <label><input type="checkbox" /> Rokinon</label>
+        <label><input type="checkbox" /> Xeen</label>
+      </div>
+
+      <div class="filter-section">
+        <h3>Price Range</h3>
+        <label><input type="checkbox" /> R1 000 – R10 000</label>
+        <label><input type="checkbox" /> R10 001 – R20 000</label>
+        <label><input type="checkbox" /> R20 001 – R30 000</label>
+      </div>
+
+      <button class="apply-btn">Apply Filters</button>
+    </aside>
+
+    <!-- PRODUCT DISPLAY AREA -->
+    <section class="product-area">
+      <div class="product-header">
+        <h1>Products</h1>
+        <div class="sort-options">
+          <label for="sort">Sort by:</label>
+          <select id="sort">
+            <option>Name (A–Z)</option>
+            <option>Price (Low to High)</option>
+            <option>Price (High to Low)</option>
+          </select>
+        </div>
+      </div>
+
+    <div class="product-grid">
+        <div class="product-card" data-type="digital" data-brand="sony" data-price="9500">
+            <div class="product-image"></div>
+            <h3>Sony FX6 Digital Camera</h3>
+            <p>Compact 4K cinema camera – perfect for handheld shoots.</p>
+            <span class="price">R 9,500/day</span>
+        </div>
+
+        <div class="product-card" data-type="dslr" data-brand="canon" data-price="12000">
+            <div class="product-image"></div>
+            <h3>Canon C300 Mark III</h3>
+            <p>Super 35mm CMOS sensor with Dual Gain Output.</p>
+            <span class="price">R 12,000/day</span>
+        </div>
+
+        <div class="product-card" data-type="digital" data-brand="arri" data-price="28000">
+            <div class="product-image"></div>
+            <h3>Arri Alexa Mini LF</h3>
+            <p>Large-format camera with industry-leading color science.</p>
+            <span class="price">R 28,000/day</span>
+        </div>
+
+        <div class="product-card" data-type="zoom" data-brand="sigma" data-price="5500">
+            <div class="product-image"></div>
+            <h3>Sigma 18–35mm T2 Zoom Lens</h3>
+            <p>High-speed zoom lens designed for cinematic clarity.</p>
+            <span class="price">R 5,500/day</span>
+        </div>
+
+        <div class="product-card" data-type="prime" data-brand="zeiss" data-price="4200">
+            <div class="product-image"></div>
+            <h3>Zeiss CP.3 50mm Prime Lens</h3>
+            <p>Full-frame coverage, cinematic contrast and color rendition.</p>
+            <span class="price">R 4,200/day</span>
+        </div>
+
+        <div class="product-card" data-type="prime" data-brand="rokinon" data-price="3800">
+            <div class="product-image"></div>
+            <h3>Rokinon 35mm T1.5 Cine DS Lens</h3>
+            <p>Manual focus lens with excellent low-light performance.</p>
+            <span class="price">R 3,800/day</span>
+        </div>
+
+
+    </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Follow us</h4>
+        <div class="social-icons">
+          <!-- icons -->
+          <div class="footer-socials">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fab fa-whatsapp"></i></a>
+           <a href="#"><i class="fas fa-envelope"></i></a>
+         </div>
+
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="catalogue.html">Cameras</a></li>
+          <li><a href="catalogue.html#lenses">Lenses</a></li>
+          <li><a href="catalogue.html#lighting">Lighting</a></li>
+          <li><a href="catalogue.html#grips">Grips</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal Stuff</h4>
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Sign up</h4>
+        <p>Receive promos & deals</p>
+        <form id="subscribeForm">
+          <input type="email" placeholder="Your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <small>© 2025 Universal Gearhouse</small>
+    </div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>

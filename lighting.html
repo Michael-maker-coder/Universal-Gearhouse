@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lighting | Universal Gearhouse</title>
+  <link rel="stylesheet" href="styling.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+
+<!-- HEADER TOP - split background with logo center, left social icons, right booklet link -->
+  <header class="header-top">
+    <div class="header-top-left">
+      <div class="logo-wrap">
+        <img src="images/logo.jpeg" alt="Universal Gearhouse Logo" class="logo-img" id="zoom-logo"/>
+      </div>
+    </div>
+
+    <div class="header-top-right">
+      <div class="header-socials">
+  <a href="mailto:info@universalgearhouse.com" class="tooltip" aria-label="Email">
+    <i class="fas fa-envelope"></i>
+    <span class="tooltip-text">Email</span>
+  </a>
+
+  <a href="tel:+27123456789" class="tooltip" aria-label="Phone">
+    <i class="fas fa-phone"></i>
+    <span class="tooltip-text">Phone</span>
+  </a>
+
+  <a href="https://wa.me/27123456789" class="tooltip" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="tooltip-text">WhatsApp</span>
+  </a>
+
+  <a href="https://facebook.com/universalgearhouse" class="tooltip" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+    <span class="tooltip-text">Facebook</span>
+  </a>
+
+  <a href="https://instagram.com/universalgearhouse" class="tooltip" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+    <span class="tooltip-text">Instagram</span>
+  </a>
+</div>
+
+    </div>
+  </header>
+
+  <!-- HEADER BOTTOM - white background with search panel left and navigation right (nav bar below center-right) -->
+  <section class="header-bottom">
+    <div class="search-panel">
+      <div class="categories-dropdown">
+        <button id="catBtn" class="cat-btn">All categories <span class="triangle">▼</span></button>
+        <div id="catList" class="cat-list">
+          <!-- Many categories with scrollable box -->
+          <ul>
+            <a href="catalogue.html"><li>All Categories</li></a>
+            <a href="cameras.html"><li>Cameras</li></a>
+            <a href="cameras.html"><li>DSLR Cameras</li></a>
+            <a href="cameras.html"><li>Remote Cameras</li></a>
+            <a href="cameras.html"><li>Lenses</li></a>
+            <a href="cameras.html"><li>Zoom Lenses</li></a>
+            <a href="cameras.html"><li>Prime Lenses</li></a>
+            <a href="gear-grips.html"><li>Grips Gear</li></a>
+            <a href="gear-grips.html"><li>Accessories</li></a>
+            <a href="gear-grips.html"><li>Streaming Units</li></a>
+            <a href="gear-grips.html"><li>Gear Stands</li></a>
+            <a href="gear-grips.html"><li>Sound Mixers</li></a>
+            <a href="lighting.html"><li>Gear Lighting</li></a>
+            <a href="lighting.html"><li>Power Distribution Packages</li></a>
+            <a href="lighting.html"><li>Generators</li></a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="search-input">
+       <input type="text" placeholder="What are you looking for?" aria-label="Search" />
+       <i class="fas fa-search search-icon"></i>
+      </div>
+
+
+    </div>
+
+    <nav>
+  <ul class="nav-menu">
+    <li><a href="index.html">Home</a></li>
+
+    <li class="dropdown">
+      <a href="cameras.html">Cameras</a>
+      <ul class="dropdown-menu">
+        <li><a href="cameras.html">Digital Cameras</a></li>
+        <li><a href="cameras.html">Lenses</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="lighting.html" class="active">Lighting</a>
+      <ul class="dropdown-menu">
+        <li><a href="lighting.html">Gear Lighting</a></li>
+        <li><a href="lighting.html">Generators</a></li>
+        <li><a href="lighting.html">Power Distribution Packages</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="gear-grips.html">Grips</a>
+      <ul class="dropdown-menu">
+        <li><a href="gear-grips.html">Gear Grips</a></li>
+        <li><a href="gear-grips.html">Gear Stands</a></li>
+        <li><a href="gear-grips.html">Accessories</a></li>
+        <li><a href="gear-grips.html">Streaming Units</a></li>
+        <li><a href="gear-grips.html">Sound Mixers</a></li>
+      </ul>
+    </li>
+
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  </section>
+
+<!-- MAIN BODY -->
+<main class="catalogue-container">
+  <!-- FILTER PANEL -->
+  <aside class="filter-panel">
+    <h2>Filter By</h2>
+
+    <div class="filter-section">
+      <h3>Type</h3>
+      <label><input type="checkbox" /> Gear Lighting</label>
+      <label><input type="checkbox" /> Generators</label>
+      <label><input type="checkbox" /> Power Distribution Packages</label>
+    </div>
+
+    <div class="filter-section">
+      <h3>Brand</h3>
+      <label><input type="checkbox" /> Aputure</label>
+      <label><input type="checkbox" /> Nanlite</label>
+      <label><input type="checkbox" /> Amaran</label>
+    </div>
+
+    <div class="filter-section">
+      <h3>Price Range</h3>
+      <label><input type="checkbox" /> R500 – R2000</label>
+      <label><input type="checkbox" /> R2001 – R3500</label>
+      <label><input type="checkbox" /> R3501 – R5000</label>
+    </div>
+
+    <button class="apply-btn">Apply Filters</button>
+  </aside>
+
+  <!-- PRODUCT DISPLAY AREA -->
+  <section class="product-area">
+    <div class="product-header">
+      <h1>Products</h1>
+      <div class="sort-options">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+          <option>Name (A–Z)</option>
+          <option>Price (Low to High)</option>
+          <option>Price (High to Low)</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="product-grid">
+      <!-- Example products -->
+      <div class="product-card" data-type="gear lighting" data-brand="aputure" data-price="1800">
+        <div class="product-image"></div>
+        <h3>Aputure LS 60d Daylight LED</h3>
+        <p>Compact daylight-balanced LED with precise beam control.</p>
+        <span class="price">R 1,800/day</span>
+      </div>
+
+      <div class="product-card" data-type="gear lighting" data-brand="nanlite" data-price="2500">
+        <div class="product-image"></div>
+        <h3>Nanlite Forza 300B II Bi-Color</h3>
+        <p>Powerful bi-color LED with advanced lighting modes.</p>
+        <span class="price">R 2,500/day</span>
+      </div>
+
+      <div class="product-card" data-type="gear lighting" data-brand="amaran" data-price="1200">
+        <div class="product-image"></div>
+        <h3>Amaran 100x S Bi-Color Light</h3>
+        <p>Soft, flicker-free illumination for studio and on-set lighting.</p>
+        <span class="price">R 1,200/day</span>
+      </div>
+
+      <div class="product-card" data-type="generator" data-brand="aputure" data-price="4800">
+        <div class="product-image"></div>
+        <h3>Aputure Power Station 800</h3>
+        <p>Portable power generator for high-wattage gear setups.</p>
+        <span class="price">R 4,800/day</span>
+      </div>
+
+      <div class="product-card" data-type="power distribution" data-brand="nanlite" data-price="3900">
+        <div class="product-image"></div>
+        <h3>Nanlite PD-300 Power Distribution Box</h3>
+        <p>Durable power hub for lighting and audio systems.</p>
+        <span class="price">R 3,900/day</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Follow us</h4>
+        <div class="social-icons">
+          <!-- icons -->
+          <div class="footer-socials">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fab fa-whatsapp"></i></a>
+           <a href="#"><i class="fas fa-envelope"></i></a>
+         </div>
+
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="catalogue.html">Cameras</a></li>
+          <li><a href="catalogue.html#lenses">Lenses</a></li>
+          <li><a href="catalogue.html#lighting">Lighting</a></li>
+          <li><a href="catalogue.html#grips">Grips</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal Stuff</h4>
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Sign up</h4>
+        <p>Receive promos & deals</p>
+        <form id="subscribeForm">
+          <input type="email" placeholder="Your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <small>© 2025 Universal Gearhouse</small>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
