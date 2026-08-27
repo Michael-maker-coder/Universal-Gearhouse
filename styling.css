@@ -673,7 +673,7 @@ a{
   position: relative;
   width: 100%;
   height: 400px;
-  background: url("images/lenses-pic3.jpg") center center/cover no-repeat;
+  background: url("contact-hero.jpg") center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -965,7 +965,10 @@ a{
 .product-image {
   width: 100%;
   height: 180px;
-  background: #e0e0e0;
+  background-color: #e0e0e0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 8px;
   margin-bottom: 10px;
 }
