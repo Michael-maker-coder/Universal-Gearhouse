@@ -31,10 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const formattedPrice = item.price ? `R ${Number(item.price).toLocaleString()}/day` : "Contact for Rate";
 
-        const imagePath = item.image.startsWith("/") ? item.image : `/${item.image}`;
+        const imagePath = item.image.replace(/^\//, "");
         card.innerHTML = `
           <div class="product-image">
-            <img src="${imagePath}" alt="${item.title}" loading="lazy" onerror="this.onerror=null; this.src='/images/logo.jpeg';"/>
+            <img src="${imagePath}" alt="${item.title}" loading="lazy" onerror="this.onerror=null; this.src='images/logo.jpeg';"/>
           </div>
           <h3>${item.title}</h3>
           <p>${item.description}</p>
@@ -154,7 +154,29 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// --- 3. Categories Dropdown Toggle ---
+// --- 3. Hamburger Mobile Nav Toggle ---
+(function () {
+  const hamburger = document.getElementById('hamburgerBtn');
+  const nav = document.querySelector('.header-bottom nav');
+  if (!hamburger || !nav) return;
+
+  hamburger.addEventListener('click', function () {
+    const isOpen = nav.classList.toggle('nav-open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  // Close nav when a link is tapped
+  nav.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      nav.classList.remove('nav-open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+
+// --- 4. Categories Dropdown Toggle ---
 document.addEventListener('click', function(e){
   const catBtn = document.getElementById('catBtn');
   const catList = document.getElementById('catList');
@@ -179,7 +201,7 @@ document.addEventListener('click', function(e){
   }
 });
 
-// --- 4. Hero Carousel ---
+// --- 5. Hero Carousel ---
 (function(){
   const slides = document.querySelectorAll('.hero-slide');
   const prev = document.getElementById('heroPrev');
