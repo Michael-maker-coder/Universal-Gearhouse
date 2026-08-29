@@ -1,0 +1,46 @@
+// categories dropdown toggle
+document.addEventListener('click', function(e){
+  const catBtn = document.getElementById('catBtn');
+  const catList = document.getElementById('catList');
+
+  if(!catBtn || !catList) return;
+
+  if(catBtn.contains(e.target)){
+    catList.style.display = (catList.style.display === 'block') ? 'none' : 'block';
+  } else {
+    if(!catList.contains(e.target)) catList.style.display = 'none';
+  }
+});
+
+// HERO carousel simple
+(function(){
+  const slides = document.querySelectorAll('.hero-slide');
+  const prev = document.getElementById('heroPrev');
+  const next = document.getElementById('heroNext');
+  let idx = 0;
+  if(!slides.length) return;
+
+  function show(i){
+    slides.forEach(s => s.classList.remove('active'));
+    slides[(i+slides.length)%slides.length].classList.add('active');
+  }
+
+  show(idx);
+
+  if(prev) prev.addEventListener('click', ()=> { idx = (idx-1+slides.length)%slides.length; show(idx); });
+  if(next) next.addEventListener('click', ()=> { idx = (idx+1)%slides.length; show(idx); });
+
+  // auto rotate every 6s
+  setInterval(()=> { idx = (idx+1)%slides.length; show(idx); }, 6000);
+})();
+
+// Basic cat carousel horizontal drag (touch friendly)
+(function(){
+  const slider = document.getElementById('catCarousel');
+  if(!slider) return;
+  let isDown=false, startX, scrollLeft;
+  slider.addEventListener('mousedown', (e)=>{ isDown=true; slider.classList.add('active'); startX=e.pageX - slider.offsetLeft; scrollLeft=slider.scrollLeft; });
+  slider.addEventListener('mouseleave', ()=>{ isDown=false; slider.classList.remove('active'); });
+  slider.addEventListener('mouseup', ()=>{ isDown=false; slider.classList.remove('active'); });
+  slider.addEventListener('mousemove', (e)=>{ if(!isDown) return; e.preventDefault(); const x=e.pageX - slider.offsetLeft; const walk=(x-startX)*1.2; slider.scrollLeft=scrollLeft-walk; });
+})();
