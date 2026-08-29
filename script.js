@@ -31,9 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const formattedPrice = item.price ? `R ${Number(item.price).toLocaleString()}/day` : "Contact for Rate";
 
+        const imagePath = item.image.startsWith("/") ? item.image : `/${item.image}`;
         card.innerHTML = `
           <div class="product-image">
-            <img src="${item.image}" alt="${item.title}" loading="lazy" onerror="this.onerror=null; this.src='images/logo.jpeg';"/>
+            <img src="${imagePath}" alt="${item.title}" loading="lazy" onerror="this.onerror=null; this.src='/images/logo.jpeg';"/>
           </div>
           <h3>${item.title}</h3>
           <p>${item.description}</p>
