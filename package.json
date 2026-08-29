@@ -1,0 +1,9 @@
+{
+  "name": "universal-gearhouse",
+  "version": "1.0.0",
+  "description": "Universal Gearhouse - Film & Media Equipment Rental Website",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Building site...'"
+  }
+}
